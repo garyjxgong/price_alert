@@ -29,7 +29,7 @@ def new_alert():
 
         Alert(alert_name, item._id, price_limit, session['email']).save_to_mongo()
 
-    return render_template("alerts/new_alert.html")
+    return render_template("alerts/index.html")
 
 
 @alert_blueprint.route('/edit/<string:alert_id>', methods=['GET', 'POST'])
