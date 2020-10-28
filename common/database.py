@@ -1,8 +1,10 @@
+import os
 import pymongo
 
 
 class Database:
-    URI = "mongodb://127.0.0.1:27017/pricing"
+    # URI = "mongodb://127.0.0.1:27017/pricing"
+    URI = os.environ.get("MONGODB_URL")
     DATABASE = pymongo.MongoClient(URI).get_database()
 
     @staticmethod
