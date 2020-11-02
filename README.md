@@ -6,6 +6,7 @@ The website is deployed on Heroku. You can access it through https://price-alert
 * Backend: Pyhton 3.7
 * Frontend: Flask, HTML, Bootstrap
 * Database: MongoDB
+* Deployment: Heroku
 ## Demo
 #### Home page
 <p align="center">
